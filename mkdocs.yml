@@ -1,0 +1,119 @@
+site_name: VCM LIVE HELP
+site_url: https://www.hptuners.com/documentation/files/VCM-Live/vcm_live/home.htm
+site_author: Adrian Avelar
+
+theme:
+  name: material
+  custom_dir: docs/overrides
+  logo: images/HPT_EMBLEM_whtblu.png
+  favicon: images/HPT_EMBLEM_whtblu.png
+
+  features:
+    - navigation.prune
+    - navigation.expand
+    - content.code.copy
+    - search.highlight
+    - header.social
+  
+  palette:
+    - scheme: default
+      primary: black
+      accent: light blue
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - scheme: slate
+      primary: black
+      accent: light blue
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+
+extra:
+  social:
+    - icon: material/file-pdf-box
+      link: https://files.hptuners.com/help/VCMLiveUserGuide.pdf
+      name: Download VCM Live User Guide (PDF)
+
+extra_css:
+  - css/extra.css
+
+markdown_extensions:
+  - toc:
+      permalink: "🔗"
+      permalink_title: Share Link
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+
+nav:
+  - Home: index.md
+  - "Introduction": Introduction.md
+  - Getting Started:
+      - "Getting Started": Getting Started.md
+      - "Installing VCM Live": Installing VCM Live.md
+      - "Connecting to a New ECU": Connecting to a New ECU.md
+      - "Initial Interface Setup": Initial Interface Setup.md
+      - "Running the Setup Wizard": Running the Setup Wizard.md
+  - User Interface:
+      - "User Interface": User Interface.md
+      - "Main Toolbar": Main Toolbar.md
+      - "Menu Bar": Menu Bar.md
+      - "User Alerts": User Alerts.md
+      - "Options": Options.md
+      - "The About Window": The About Window.md
+  - Editing Tunable Parameters:
+      - "Editing Tunable Parameters": Editing Tunable Parameters.md
+      - "Tuning List Characteristics": Tuning List Characteristics.md
+      - "Editing Tables": Editing Tables.md
+      - "The Table Editor Toolbar": The Table Editor Toolbar.md
+      - "Using 3D Graph View": Using 3D Graph View.md
+      - "Using 2D Graph View": Using 2D Graph View.md
+      - "Using Histogram View": Using Histogram View.md
+      - "Table Editor Right-Click Menu": Table Editor Right-Click Menu.md
+      - "Renumbering Table Axes": Renumbering Table Axes.md
+      - "Crank Cam Offset Wizard": Crank Cam Offset Wizard.md
+  - Automatic Throttle Calibration:
+      - "Automatic Throttle Calibration": Automatic Throttle Calibration.md
+  - Upgrading and Comparing Tunes:
+      - "Upgrading and Comparing Tunes": Upgrading and Comparing Tunes.md
+  - Live Tracing:
+      - "Live Tracing": Live Tracing.md
+  - Recording Data and Saving Logs:
+      - "Recording Data and Saving Logs": Recording Data and Saving Logs.md
+      - "Recording Live Data": Recording Live Data.md
+      - "Generating a Log File": Generating a Log File.md
+      - "Viewing a Saved Log File": Viewing a Saved Log File.md
+      - "The Timeline": The Timeline.md
+      - "Using Time Graph Subwindows": Using Time Graph Subwindows.md
+      - "Using Measurement List Subwindow": Using Measurement List Subwindow.md
+      - "Standalone Logging Configuration": Standalone Logging Configuration.md
+  - Trigger Scope:
+      - "Trigger Scope": Trigger Scope.md
+  - Layouts:
+      - "Layouts": Layouts.md
+      - "Layout Pages (Tabs)": Layout Pages (Tabs).md
+      - "Subwindows": Subwindows.md
+      - "Adding a Gauge": Adding a Gauge.md
+      - "Gauge Parameters": Gauge Parameters.md
+      - "Adding a Time Graph": Adding a Time Graph.md
+      - "Time Graph Parameters": Time Graph Parameters.md
+      - "Adding a Measurement List": Adding a Measurement List.md
+      - "Measurement Parameters": Measurement Parameters.md
+      - "Adding a Gauge Group": Adding a Gauge Group.md
+      - "Adding a Table Editor": Adding a Table Editor.md
+      - "Editor Parameters": Editor Parameters.md
+      - "Adding a Characteristic List": Adding a Characteristic List.md
+      - "Characteristic Parameters": Characteristic Parameters.md
+  - Virtual Measurements:
+      - "Virtual Measurements": Virtual Measurements.md
+      - "Expression Variables": Expression Variables.md
+      - "Supported Math Operations and Functions": Supported Math Operations and Functions.md
+  - CAN Bus Configuration:
+      - "CAN Bus Configuration": CAN Bus Configuration.md
+  - Diagnostic & Information:
+      - "Diagnostic & Information": Diagnostic & Information.md
+  - Third Party Controllers:
+      - "Third Party Controllers": Third Party Controllers.md
+  - Contacting Customer Support:
+      - "Contacting Customer Support": Contacting Customer Support.md

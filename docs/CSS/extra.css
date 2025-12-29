@@ -1,0 +1,133 @@
+/* -------------------------------------------
+   Global text spacing
+-------------------------------------------- */
+p {
+  margin-bottom: 1.5em;
+}
+
+.md-typeset ol > li {
+  margin-bottom: 1.5em;
+}
+
+/* -------------------------------------------
+   Tables – center first column
+-------------------------------------------- */
+.md-typeset table td:first-child,
+.md-typeset table th:first-child {
+  text-align: center;
+  vertical-align: middle;
+}
+
+/* -------------------------------------------
+   Footer PDF icon (Material footer social link)
+-------------------------------------------- */
+
+/* Target ONLY the PDF icon in the footer */
+.md-footer .md-social__link[title*="PDF"] svg {
+  width: 2.6rem;
+  height: 2.6rem;
+  transition: transform 0.2s ease;
+}
+
+/* Hover animation */
+.md-footer .md-social__link[title*="PDF"]:hover svg {
+  transform: scale(1.15);
+}
+
+/* -------------------------------------------
+   Floating PDF button
+-------------------------------------------- */
+.pdf-float {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+
+  width: 100px;
+  height: 100px;
+
+  background: #f44336;
+  color: white;
+
+  border-radius: 50%;
+  z-index: 1000;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Floating button hover effect */
+.pdf-float:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.35);
+}
+
+/* Ensure Material icon inside scales nicely */
+.pdf-float svg {
+  width: 60px;
+  height: 60px;
+  fill: white;
+}
+
+/* -------------------------------------------
+   Mobile responsiveness
+-------------------------------------------- */
+@media (max-width: 768px) {
+  .pdf-float {
+    width: 80px;
+    height: 80px;
+    bottom: 1.5rem;
+    right: 1.5rem;
+  }
+
+  .pdf-float svg {
+    width: 48px;
+    height: 48px;
+  }
+}
+/* Floating "Return to Top" button */
+.top-button {
+  position: fixed;
+  bottom: 4rem;       /* Adjust so it doesn't overlap your PDF button */
+  right: 2rem;
+  width: 50px;
+  height: 50px;
+  background: #0078d4; /* Blue button, change as needed */
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+  font-size: 1.5rem;
+  text-decoration: none;
+  z-index: 1000;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.25);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, opacity 0.3s ease;
+  opacity: 0.7;
+}
+
+/* Hover effect */
+.top-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.35);
+  opacity: 1;
+}
+
+/* Optional: hide on small screens */
+@media (max-width: 768px) {
+  .top-button {
+    bottom: 3rem;
+    right: 1.5rem;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 1.2rem;
+  }
+}
+
+/* Smooth scroll for all anchor links */
+html {
+  scroll-behavior: smooth;
+}
